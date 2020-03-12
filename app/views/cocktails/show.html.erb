@@ -1,7 +1,7 @@
 
-<div class="show-card">
+<div class="cocktail-show-card mt-4">
   <h3><%= @cocktail.name %></h3>
-  <div class="card-category" style="background-image: url(<%= @cocktail.picture_url %>)"></div>
+  <div class="cocktail-show-image" style="background-image: url(<%= @cocktail.picture_url %>)"></div>
 </div>
 
 <% @cocktail.doses.each do |dose| %>

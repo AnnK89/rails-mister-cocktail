@@ -1,7 +1,14 @@
-<h2>Add a new cocktail</h2>
-
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.input :picture_url %>
-  <%= f.button :submit, class: "btn btn-primary"%>
-<% end %>
+<div class="container mt-3">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1527271982979-83fea3eb3582?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
+    <div class="container">
+      <h2>Add a new cocktail</h2>
+      <div class="form-container">
+        <%= simple_form_for @cocktail do |f| %>
+          <%= f.input :name %>
+          <%= f.input :picture_url %>
+          <%= f.button :submit, class: "btn btn-ghost"%>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
