@@ -1,0 +1,15 @@
+<div class="container mt-3">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-4">
+        <div class="cocktail-card-image" style="background-image: url(<%= cocktail.picture_url %>)"></div>
+        <h4><%= link_to cocktail.name, cocktail_path(cocktail) %></h4>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+

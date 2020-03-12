@@ -1,0 +1,13 @@
+
+<div class="show-card">
+  <h3><%= @cocktail.name %></h3>
+  <div class="card-category" style="background-image: url(<%= @cocktail.picture_url %>)"></div>
+</div>
+
+<% @cocktail.doses.each do |dose| %>
+  <p>Description: <%= dose.description %></p>
+  <p>Ingredients: <%= dose.ingredient.name %></p>
+  <%= link_to 'Delete dose', dose, method: :delete, data: { confirm: "Are you sure?" } %>
+<% end %>
+
+
