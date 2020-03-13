@@ -4,6 +4,9 @@
   <div class="cocktail-show-image" style="background-image: url(<%= @cocktail.picture_url %>)"></div>
 </div>
 
+
+<%= link_to 'Add dose', new_cocktail_dose_path(@cocktail.id) %>
+
 <% @cocktail.doses.each do |dose| %>
   <p>Description: <%= dose.description %></p>
   <p>Ingredients: <%= dose.ingredient.name %></p>

@@ -17,5 +17,19 @@
 
 
 import 'bootstrap';
+import 'select2/dist/css/select2.css'
+import { initSelect2 } from '../components/init_select2';
 import { loadDynamicFormText } from '../components/form';
+import { initSweetalert } from '../components/swal';
+
+initSelect2();
+
+initSweetalert('#sweet-alert-demo', {
+  title: "A nice alert",
+  text: "This is a great alert, isn't it?",
+  icon: "success"
+}, (value) => {
+  console.log(value);
+});
+
 loadDynamicFormText();
