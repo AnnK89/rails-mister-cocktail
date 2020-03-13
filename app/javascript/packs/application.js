@@ -17,3 +17,5 @@
 
 
 import 'bootstrap';
+import { loadDynamicFormText } from '../components/form';
+loadDynamicFormText();
